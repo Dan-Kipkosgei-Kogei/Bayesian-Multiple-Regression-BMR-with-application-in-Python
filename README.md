@@ -70,3 +70,7 @@
 
    $\hat{\boldsymbol{\beta}}= \frac{\tau}{2} \sum_{i=1}^{N} (y_i - f(x_i, \boldsymbol{\beta}))^2
   +\frac{\alpha}{2} \boldsymbol{\beta}^T \boldsymbol{\beta}$
+
+  - Minimizing this expression gives the maximum posterior estimate, which is equivalent to ridge regression.
+  - Bayesian regression provides a probabilistic framework for linear regression by incorporating prior knowledge.
+  - Instead of estimating a single set of parameters, we obtain a distribution over possible parameters, which enhances           robustness in situations with limited data or multicollinearity.
