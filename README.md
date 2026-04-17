@@ -74,3 +74,5 @@
   - Minimizing this expression gives the maximum posterior estimate, which is equivalent to ridge regression.
   - Bayesian regression provides a probabilistic framework for linear regression by incorporating prior knowledge.
   - Instead of estimating a single set of parameters, we obtain a distribution over possible parameters, which enhances           robustness in situations with limited data or multicollinearity.
+  ## Modeling Student Performance using Bayesian MLR
+  
