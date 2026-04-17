@@ -60,3 +60,13 @@
 
    $-\ln L(Y \mid X, \boldsymbol{\beta}, \sigma^2)
    = \frac{\tau}{2}\sum_{i=1}^{N} (y_i -f(x_i, \boldsymbol{\beta}))^2+ constant$
+
+- Taking the logarithm of the posterior:
+
+   $\ln P(\boldsymbol{\beta} \mid X, \alpha, \tau)= \ln L(Y \mid X, \boldsymbol{\beta}, \tau)
+   +\ln P(\boldsymbol{\beta} \mid \alpha)$
+
+- Substituting the expressions:
+
+   $\hat{\boldsymbol{\beta}}= \frac{\tau}{2} \sum_{i=1}^{N} (y_i - f(x_i, \boldsymbol{\beta}))^2
+  +\frac{\alpha}{2} \boldsymbol{\beta}^T \boldsymbol{\beta}$
