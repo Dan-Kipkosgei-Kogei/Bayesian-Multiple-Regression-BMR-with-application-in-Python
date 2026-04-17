@@ -28,3 +28,31 @@
       - The target variable $Y$ follows a normal distribution with mean 
         $\mu = f(x, \boldsymbol{\beta})$
         and variance $\sigma^2$, i.e., $Y \sim \mathcal{N}(f(x, \boldsymbol{\beta}), \sigma^2)$.
+- The probability density function of $Y$ given $X$ is:
+  
+$P(y \mid x, \boldsymbol{\beta}, \sigma^2)
+= \frac{1}{\sqrt{2\pi\sigma^2}}
+\exp\left[
+-\frac{(y - f(x, \boldsymbol{\beta}))^2}{2\sigma^2}
+\right]$
+
+For $N$ observations:
+
+$L(Y \mid X, \boldsymbol{\beta}, \sigma^2)
+= \prod_{i=1}^{N} P(y_i \mid x_{i1}, x_{i2}, \ldots, x_{ip})$
+
+which simplifies to:
+
+$L(Y \mid X, \boldsymbol{\beta}, \sigma^2)
+= \prod_{i=1}^{N}
+\frac{1}{\sqrt{2\pi\sigma^2}}
+\exp\left[
+-\frac{(y_i - f(x_i, \boldsymbol{\beta}))^2}{2\sigma^2}
+\right]$
+
+Taking the logarithm of the likelihood function:
+
+$\ln L(Y \mid X, \boldsymbol{\beta}, \sigma^2)
+= -\frac{N}{2} \ln(2\pi\sigma^2)
+- \frac{1}{2\sigma^2}
+\sum_{i=1}^{N} (y_i - f(x_i, \boldsymbol{\beta}))^2$
