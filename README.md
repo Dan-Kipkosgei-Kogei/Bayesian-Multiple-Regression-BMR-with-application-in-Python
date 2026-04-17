@@ -52,10 +52,10 @@
   $\tau = \frac{1}{\sigma^2}$
 
   Substituting into the likelihood function:
-  $\ln L(Y \mid X, \boldsymbol{\beta}, \sigma^2)= -\frac{N}{2} \ln(2\pi)
- + \frac{N}{2} \ln(\tau)- \frac{\tau}{2}\sum_{i=1}^{N} (y_i - f(x_i, \boldsymbol{\beta}))^2$
+   $\ln L(Y \mid X, \boldsymbol{\beta}, \sigma^2)=-\frac{N}{2} \ln(2\pi)
+ + \frac{N}{2} \ln(\tau)-\frac{\tau}{2}\sum_{i=1}^{N} (y_i - f(x_i, \boldsymbol{\beta}))^2$
 
-  The negative log-likelihood is:
+   The negative log-likelihood is:
 
    $-\ln L(Y \mid X, \boldsymbol{\beta}, \sigma^2)
    = \frac{\tau}{2}\sum_{i=1}^{N} (y_i -f(x_i, \boldsymbol{\beta}))^2+ constant$
