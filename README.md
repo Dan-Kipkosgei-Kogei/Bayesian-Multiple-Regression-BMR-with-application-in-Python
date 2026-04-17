@@ -33,29 +33,30 @@
   $P(y \mid x, \boldsymbol{\beta}, \sigma^2)= \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left[
        -\frac{(y - f(x, \boldsymbol{\beta}))^2}{2\sigma^2}\right]$
 
-    For $N$ observations:
+- For $N$ observations:
 
   $L(Y \mid X, \boldsymbol{\beta}, \sigma^2)= \prod_{i=1}^{N} P(y_i \mid x_{i1}, x_{i2}, \ldots, x_{ip})$
 
-   which simplifies to:
+- which simplifies to:
 
   $L(Y \mid X, \boldsymbol{\beta}, \sigma^2)= \prod_{i=1}^{N}\frac{1}{\sqrt{2\pi\sigma^2}}
       \exp\left[-\frac{(y_i - f(x_i, \boldsymbol{\beta}))^2}{2\sigma^2}\right]$
 
-   Taking the logarithm of the likelihood function:
+- Taking the logarithm of the likelihood function:
 
   $ln L(Y \mid X, \boldsymbol{\beta}, \sigma^2)= -\frac{N}{2} ln(2\pi\sigma^2)- \frac{1}{2\sigma^2}
       \sum_{i=1}^{N} (y_i - f(x_i, \boldsymbol{\beta}))^2$
 
-   We define precision $\tau$ as:
+- We define precision $\tau$ as:
 
   $\tau = \frac{1}{\sigma^2}$
 
-  Substituting into the likelihood function:
+- Substituting into the likelihood function:
+  
    $\ln L(Y \mid X, \boldsymbol{\beta}, \sigma^2)=-\frac{N}{2} \ln(2\pi)
     +\frac{N}{2} \ln(\tau)-\frac{\tau}{2}\sum_{i=1}^{N} (y_i - f(x_i, \boldsymbol{\beta}))^2$
 
-   The negative log-likelihood is:
+- The negative log-likelihood is:
 
    $-\ln L(Y \mid X, \boldsymbol{\beta}, \sigma^2)
    = \frac{\tau}{2}\sum_{i=1}^{N} (y_i -f(x_i, \boldsymbol{\beta}))^2+ constant$
